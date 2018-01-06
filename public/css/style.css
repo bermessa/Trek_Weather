@@ -116,12 +116,18 @@ body {
     float: right;
 }
 
-#welcomeUser {
-    font-family: 'Arima Madurai', cursive;
+#rowOne {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+#welcomeUser {
+    font-family: 'Arima Madurai', cursive;
+}
+
+#logOut {
+    margin-top: 15px;
+}
 
 /*cell phone fix*/
 
@@ -136,33 +142,19 @@ body {
     background-color: #f8f8f8;
 }
 
-/*submitbutton*/
-
-#sbmt {
-    background-color: #56a2dc;
-    color: white;
-    border-color: #273b56;
-    margin-top: 6px;
-
-}
-
-/*logout button*/
-
-#lgo {
-    margin-left: 100px;
-    background-color: #0d422e;
-    color: white;
-    border-color: #273b56;
-}
 
 /*iPad Pro Landscape*/
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
 
-    #lgo {
-        margin-left: 120px;
-        margin-top: 5px;
+    #welcomeUser {
+        text-align: center;
     }
+
+    #logOut {
+        text-align: center;
+    }
+
     #sbmt {
         margin-left: 70px;
     }
@@ -178,10 +170,14 @@ body {
         width: 18%;
         vertical-align: middle;
     }
-    #lgo {
-        margin-left: 18px;
-        margin-top: 5px;
+    #welcomeUser {
+        text-align: center;
     }
+
+    #logOut {
+        text-align: center;
+    }
+
     #sbmt {
         margin-left: 15px;
     }
@@ -198,19 +194,26 @@ body {
         width: 18%;
         vertical-align: middle;
     }
-    #lgo {
-        margin-left: 18px;
-        margin-top: 5px;
+    #welcomeUser {
+        text-align: center;
     }
+
+    #logOut {
+        text-align: center;
+    }
+
     #sbmt {
         margin-left: 15px;
     }
 }
 
 @media screen and (max-width: 440px) {
-    #lgo {
-        /*margin-left: 194px;*/
-        margin-top: 13px;
+    #welcomeUser {
+        text-align: center;
+    }
+
+    #logOut {
+        text-align: center;
     }
 }
 
@@ -226,19 +229,26 @@ body {
         width: 20%;
         vertical-align: middle;
     }
-    #lgo {
-        margin-top: 8px;
-        /*margin-left: 30px;*/
+    #welcomeUser {
+        text-align: center;
+    }
+
+    #logOut {
+        text-align: center;
     }
 }
 
 /*nexus 6p*/
 
 @media screen and (max-width: 737px) and (min-width: 442px) {
-    #lgo {
-        margin-top: 8px;
-        margin-left: 450px;
+    #welcomeUser {
+        text-align: center;
     }
+
+    #logOut {
+        text-align: center;
+    }
+
     #sbmt {
         margin-left: 30px;
     }
@@ -248,11 +258,14 @@ body {
 /*nexus 5 portriat*/
 
 @media screen and (max-width: 414px) and (min-width: 361px) {
-    #lgo {
-        /*margin-left: 194px;*/
-        margin-top: 8px;
-        margin-left: 180px;
+    #welcomeUser {
+        text-align: center;
     }
+
+    #logOut {
+        text-align: center;
+    }
+
     #sbmt {
         margin-left: 20px;
     }
@@ -261,18 +274,24 @@ body {
 /*galaxy s5 portrait*/
 
 @media screen and (max-width: 360px) {
-    #lgo {
-        margin-left: 165px;
-        margin-top: 8px;
+    #welcomeUser {
+        text-align: center;
+    }
+
+    #logOut {
+        text-align: center;
     }
 }
 
 /*galaxy s5 landscape*/
 
 @media screen and (max-width: 640px) and (min-width: 415px) {
-    #lgo {
-        margin-left: 410px;
-        margin-top: 8px;
+    #welcomeUser {
+        text-align: center;
+    }
+
+    #logOut {
+        text-align: center;
     }
     #sbmt {
         margin-left: 40px;
