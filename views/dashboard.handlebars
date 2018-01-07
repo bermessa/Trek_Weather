@@ -67,59 +67,59 @@
 
     <!-- THIRD ROW -->
     <!-- ====================== -->
-    <div class="row " id="adBox ">
+    <div class="row " id="adBox">
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     Airbnb<br>
-                    <a href="https://www.airbnb.com/ " target="_blank "><img src="/images/airbnb.png " width="auto " height="120 "></a>
+                    <a href="https://www.airbnb.com/" target="_blank"><img src="/images/airbnb.png" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     Hostelworld<br>
-                    <a href="https://www.hostelworld.com/ " target="_blank "><img src="/images/hostelworld.png " width="auto " height="120 "></a>
+                    <a href="https://www.hostelworld.com/" target="_blank"><img src="/images/hostelworld.png" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
 
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     SkyScanner<br>
-                    <a href="https://www.skyscanner.com/ " target="_blank "><img src="/images/skyscanner.png " width="auto " height="120 "></a>
+                    <a href="https://www.skyscanner.com/" target="_blank"><img src="/images/skyscanner.png" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     Currency Converter<br>
-                    <a href="http://www.xe.com/currencyconverter/ " target="_blank "><img src="/images/xe.png " width="auto " height="120 "></a>
+                    <a href="http://www.xe.com/currencyconverter/" target="_blank"><img src="/images/xe.png" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     TripAdvisor<br>
-                    <a href="https://www.tripadvisor.com/ " target="_blank "><img src="/images/tripadvisor.jpg " width="auto " height="120 "></a>
+                    <a href="https://www.tripadvisor.com/" target="_blank"><img src="/images/tripadvisor.jpg" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-2 ">
-            <div class="panel panel-default ">
-                <div class="panel-body ">
+        <div class="col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-body">
                     USA National Parks<br>
-                    <a href="https://www.nps.gov/findapark/index.htm " target="_blank "><img src="/images/nps.png " width="auto " height="120 "></a>
+                    <a href="https://www.nps.gov/findapark/index.htm" target="_blank"><img src="/images/nps.png" width="auto" height="120"></a>
                 </div>
             </div>
         </div>
@@ -131,33 +131,33 @@
 
 <!-- JAVASCRIPT -->
 <!-- ====================== -->
-<script type="text/javascript ">
-    $(document).on("submit ", "#tripForm ", function(event) {
+<script type="text/javascript">
+    $(document).on("submit", "#tripForm", function(event) {
         event.preventDefault();
         var loc = {
-            city: $(".city ").val().trim(),
-            state: $(".state ").val().trim(),
-            date: $(".date ").val().trim()
+            city: $(".city").val().trim(),
+            state: $(".state").val().trim(),
+            date: $(".date").val().trim()
         };
         $.ajax({
-            type: "POST ",
-            url: "/api/newSearch ",
+            type: "POST",
+            url: "/api/newSearch",
             data: loc
         }).done(function(data) {
             console.log(location.pathname);
-            if (location.pathname !== "/results ") {
-                location.href = "/results ";
+            if (location.pathname !== "/results") {
+                location.href = "/results";
             }
             else {
                 location.reload();
             }
         });
     });
-    $(document).on("click ", ".deleteButton ", function() {
-        var id = $(this).data("deleteid ");
+    $(document).on("click", ".deleteButton", function() {
+        var id = $(this).data("deleteid");
         $.ajax({
-            type: "DELETE ",
-            url: "/results/delete/ " + id
+            type: "DELETE",
+            url: "/results/delete/" + id
         }).done(function() {
             location.reload();
         });
