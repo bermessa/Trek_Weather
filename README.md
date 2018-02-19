@@ -32,7 +32,7 @@ Password: Test1234 <br><br>
 * Passport reset and email verification <br><br>
 
 **MY CONTRIBUTION:** <br>
-Front End:
+Front End: 
  * Sole front end developer. Made final team decisions on layout and styles <br>
 
 Back End:
