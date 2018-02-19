@@ -28,6 +28,7 @@ Password: Test1234 <br><br>
 **Future Deployment:** <br>
 * A search field that allows a range of dates <br>
 * Prevent duplicate searches populating in search history <br>
+* Better weather data, including averages on selected data range <br>
 * Better satelite image <br> 
 * Passport reset and email verification <br><br>
 
