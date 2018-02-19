@@ -32,10 +32,10 @@ Password: Test1234 <br><br>
 * Passport reset and email verification <br><br>
 
 **MY CONTRIBUTION:** <br>
-Front End: <br>
+Front End:
  * Sole front end developer. Made final team decisions on layout and styles <br>
 
-Back End: <br>
+Back End:
 * Get/Post routes: <br>
   * controllers/tripController.js: router.get("/results" ... ), router.post("/api/newSearch" ... ), router.delete("/results/delete/:id" ... ) <br>
   * views/partials/dashboard.js: AJAX post, AJAX delete
