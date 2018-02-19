@@ -1,6 +1,6 @@
-## Trek Weather <br><br>
+## Trek Weather
 
-Going out of town? Planning an exotic trip? Log in to your Weather Trek account and find a dashboard of your saved searches or new search for weather history patterns <br><br>
+Going out of town? Planning an exotic trip? Log in to your Weather Trek account and find a dashboard of your saved searches or new search for weather history patterns <br>
 
 [Create an account](https://immense-bastion-29246.herokuapp.com/) <br>
 Sign in email: testemail@gmail.com <br>
@@ -29,18 +29,18 @@ Password: Test1234 <br><br>
 * A search field that allows a range of dates <br>
 * Prevent duplicate searches populating in search history <br>
 * Better satelite image <br> 
-* Passport reset and email verification <br>
+* Passport reset and email verification <br><br>
 
 **MY CONTRIBUTION:** <br>
 Front End: <br>
  * Sole front end developer. Made final team decisions on layout and styles <br>
 
 Back End: <br>
- * Get/Post routes: <br>
+* Get/Post routes: <br>
   * controllers/tripController.js: router.get("/results" ... ), router.post("/api/newSearch" ... ), router.delete("/results/delete/:id" ... ) <br>
   * views/partials/dashboard.js: AJAX post, AJAX delete
- * Web API <br>
- * Axios <br>
- * Handlebars <br>
+* [Web API Wunderground](https://www.wunderground.com/weather/api/d/docs?d=data/history) <br>
+* Axios <br>
+* Handlebars <br>
 
 
