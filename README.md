@@ -2,7 +2,7 @@
 
 Going out of town? Planning an exotic trip? Log in to your Weather Trek account and find a dashboard of your saved searches or new search for weather history patterns <br>
 
-[Create an account](https://immense-bastion-29246.herokuapp.com/) <br>
+[Link to site](https://immense-bastion-29246.herokuapp.com/) <br>
 Sign in email: testemail@gmail.com <br>
 Password: Test1234 <br><br>
 
